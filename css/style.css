@@ -1,0 +1,281 @@
+
+/* VARS */
+:root {
+    --dark-clr: #171828;
+    --text-clr: #74747C;
+    --pirple-clr: #746C8C;
+    --priple-clr-2: #A49CBA;
+    --pirple-clr-3: #DFD4F1;
+    --gradient-clr: linear-gradient(
+      to right top,
+      #57417f,
+      #5a4688,
+      #5d4c91,
+      #60519a,
+      #6257a3
+    );
+    --bs: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.125);
+  }
+
+
+/* common ou commun*/
+
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+ html
+ {
+     font-size: 62.50%;
+ }
+ 
+ body
+ {
+    font-family: "Montserrat", sans-serif;
+    line-height:1.7;
+    font-weight: 300;
+    color: var(--text-clr);
+    font-size: 1.5rem;
+ }
+
+ ul
+ {
+list-style: none;
+ }
+ 
+ a
+ {
+     text-decoration: none;
+ }
+
+ .container
+ {
+     max-width: 114rem;
+     margin: 0 auto;
+ }
+
+ /*navigation*/
+
+ nav
+ {
+     /*margin-bottom: 3rem;*/
+     /*background :#f4f4f4;*/
+ }
+ .nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  }
+
+ .nav-menu .nav-item + .nav-item
+ {
+     /* margin-left:2rem;*/
+ }
+
+ .nav-link
+ {
+    color: var(--text-clr);
+    font-weight: 400;
+    display: inline-block;
+    padding:2rem 3rem;
+    transition: all .2s;
+ }
+ .nav-link:hover
+  {
+    color: var(--dark-clr);
+  }
+ .nav-link.active {
+  
+}
+
+
+ .nav-item-dropdown
+ {
+     position: relative;
+ }
+
+ .nav-item-dropdown .nav-link
+
+ {
+     position: relative;
+ }
+
+ .nav-item-dropdown .nav-link ::after
+ {
+     content: "\22C1";
+     position: absolute;
+     top : 50%;
+     transform: translateY(-50%);
+     right: 12px;
+     color: var(--dark-clr); 
+ }
+
+ .nav-item-dropdown:hover .dropdown-content
+ {
+     display: flex;
+ }
+ .nav-item-dropdown:hover .nav-link
+ {
+  background-color: var(--dark-clr);
+  color: #fff;   
+ }
+
+ .nav-item-dropdown:hover .nav-link::after
+ {
+     content:"\22C0";
+     color:#fff;
+ }
+ .block-login, 
+ .block-signin
+ {
+    padding: 4rem;
+    flex: 1;
+ }
+
+ .dropdown-content {
+    position: absolute;
+    background: #fff;
+    display: flex;
+    box-shadow: var(--bs);
+    right: 0;
+    width: 500px;
+    display: none;
+  }
+ .dropdown-content h3
+ {
+     color:var(--dark-clr);
+     font-size:1.6rem;
+     margin-bottom: 1rem;
+ }
+ .dropdown-content p
+ {
+     font-size:1.2rem;
+     line-height:1.5;
+     margin-bottom:1.5rem;
+
+ }
+ /*end navigation*/
+
+
+ /*hero*/
+
+ .hero
+ {
+
+    background-image: url(../images/img.png);
+    background-color: var(-priple-clr-2);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25rem 0;
+
+ }
+.hero__content
+{
+    width: 50%;
+    max-width : 576px;
+    margin-right: auto;
+    color:var(--dark-clr);
+
+}
+.hero__tile
+{
+margin-bottom: bottom 2rem;
+}
+.hero__subtitle
+{
+    font-weight: 100;
+    margin-bottom:3rem;
+}
+
+/*end hero*/
+
+/*form*/
+
+.form
+{
+    width:80%;
+
+}
+.form input
+{
+flex: 1;
+}
+.form button
+{
+background : var(--dark-clr)!important;
+color: #fff !important;
+transition:all .2s;
+}
+
+.form button:hover{
+    opacity: .8;
+}
+
+.form-group{
+    display: flex;
+    align-items: stretch;
+}
+
+.form-control
+{
+    border: none;
+    padding: 2rem;
+    outline: none;
+}
+  .btn {
+      display: inline-block;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border: 1px solid var(--dark-clr);
+  }
+
+  .btn-big {
+    padding: 2rem 4rem;
+  }
+  
+  .btn-small {
+    padding: 1rem 2rem;
+  }
+  
+  .btn-outline {
+  background-color: transparent;
+    color: var(--dark-clr);
+    transition: all .2s;
+  }
+  
+  .btn-outline:hover {
+    background-color: var(--dark-clr);
+    color: #fff;
+  }
+  
+  .btn-dark {
+   background-color: var(--dark-clr);
+    color: #fff;
+  }
+  
+  .btn-dark:hover {
+   background-color: transparent;
+   color: var(--dark-clr);
+  }
+  /* END FORM */
+  
+  /* UTILITIES */
+  
+  .br-top-bottom-{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+  }
+  
+  .bl-top-bottom-big {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+
